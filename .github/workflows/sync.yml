@@ -23,6 +23,6 @@ jobs:
           git fetch upstream
 
           # 可以自定义要同步的分支
-          git checkout -b master origin/master
+          git checkout master
           git merge --no-edit upstream/master
           git push origin master
