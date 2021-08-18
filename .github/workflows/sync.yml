@@ -1,7 +1,8 @@
 name: Merge upstream
 
 on:
-  # 定时任务触发，使用 cron 规则，这里默认一小时执行一次
+  repository_dispatch:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
 
